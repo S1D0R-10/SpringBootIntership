@@ -1,5 +1,5 @@
 package repository;
-import 
+import
 
 public class OrderRepository extends JpaRe {
 
