@@ -1,6 +1,8 @@
 package pl.szymonsidor.dev.service;
 import pl.szymonsidor.dev.model.Order;
-import pl.szymonsidor.dev.model.orderStatus
+import pl.szymonsidor.dev.model.orderStatus;
+
+import java.util.List;
 
 
 public interface OrderService {
@@ -8,6 +10,6 @@ public interface OrderService {
     Order getOrderById(int id);
     Order updateOrderStatus(int id, orderStatus status);
     void deleteOrders(int id);
-    Order getOrderByStatus(orderStatus status);
-    Order getOrders();
+    List<Order> getOrderByStatus(orderStatus status);
+    List<Order> getOrders();
 }
