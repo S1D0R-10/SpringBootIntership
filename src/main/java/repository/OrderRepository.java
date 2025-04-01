@@ -1,6 +1,5 @@
 package repository;
-import
+import org.springframework.data.jpa.repository.JpaRepository;
+import pl.szymonsidor.dev.model.Order;
 
-public class OrderRepository extends JpaRe {
-
-}
+public interface OrderRepository extends JpaRepository<Order, Integer> {}
